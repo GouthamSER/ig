@@ -48,7 +48,7 @@ async def start(client: Client, message: Message):
     await message.reply("Send me a public Instagram reel, post, or story URL, and I'll download and send it to you in PM!")
 
 # Handle messages (Instagram URLs)
-@app.on_message(filters.text & ~filters.command)
+@app.on_message(filters.text & filters.command)
 async def handle_message(client: Client, message: Message):
     url = message.text
     shortcode = extract_shortcode(url)
