@@ -18,9 +18,9 @@ L = instaloader.Instaloader()
 DOWNLOAD_DIR = os.getenv('DOWNLOAD_DIR', '/usr/app/downloads/ig')
 
 # Pyrogram client setup
-API_ID = int(os.getenv('API_ID'))  # Your API ID
-API_HASH = os.getenv('API_HASH')  # Your API Hash
-BOT_TOKEN = os.getenv('BOT_TOKEN')  # Your Bot Token
+API_ID = int(os.getenv('API_ID', 18979569))  # Your API ID
+API_HASH = os.getenv('API_HASH',"45db354387b8122bdf6c1b0beef93743")  # Your API Hash
+BOT_TOKEN = os.getenv('BOT_TOKEN',"8356103121:AAHKeXpH8xaPpqY1mCEp86UnywzNZo-sNbM")  # Your Bot Token
 
 app = Client("instagram_downloader_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
